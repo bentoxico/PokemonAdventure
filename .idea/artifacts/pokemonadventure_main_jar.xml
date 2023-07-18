@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="pokemonadventure-main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pokemonadventure_main_jar</output-path>
+    <root id="archive" name="pokemonadventure-main.jar">
+      <element id="module-output" name="pokemonadventure-main" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/simple-graphics-0.2.1-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
