@@ -2,17 +2,12 @@ package org.academiadecodigo;
 
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
-public class Player extends Entity{
+public class Player{
     private Picture player;
     private Pokemon pokemon;
 
     private int currentFrame;
     private int currentSide;
-
-    private final int shootingCounter=0;
-
-    private Picture bullet;
-
 
 
     public Player() {
@@ -55,20 +50,4 @@ public class Player extends Entity{
     }
 
 
-
-    public void moveJump() {
-        if (currentSide == 2) {
-            player.translate(60, -100);
-            return;
-        }
-        player.translate(-60,-100);
-    }
-
-    public void moveFall() {
-        if(currentSide == 2){
-            player.translate(60, 100);
-            return;
-        }
-        player.translate(-60,100);
-    }
-    }
+}

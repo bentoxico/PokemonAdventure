@@ -11,9 +11,7 @@ public class Game implements Runnable{
     private final GamePanel gamePanel = new GamePanel();
     private final int FPS_SET = 120;
 
-    public Game() {
 
-    }
 
     public void init() {
         GamePanel gamePanel = new GamePanel();

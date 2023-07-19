@@ -12,7 +12,7 @@ public class InputHandler implements KeyboardHandler {
 
     private final Keyboard keyboard;
     private KeyboardEvent[] events;
-    private KeyboardEvent[] released;
+
     private CollisionChecker collisionChecker = new CollisionChecker();
 
     public InputHandler(Player player) {
@@ -53,12 +53,8 @@ public class InputHandler implements KeyboardHandler {
     }
 
 
-        @Override
+    @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
-
-        int tileNum1, tileNum2;
-
-        CollisionChecker c = new CollisionChecker();
 
 
         switch (keyboardEvent.getKey()) {
@@ -95,8 +91,6 @@ public class InputHandler implements KeyboardHandler {
                 player.setPokemon(Pokemon.PIKACHU);
                 checkPokemon(player, keyboardEvent);
                 break;
-            /*case KeyboardEvent.KEY_F:
-                player.shootWeapon();*/
         }
     }
 
